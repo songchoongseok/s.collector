@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "qPgzj1AHRBts4LA4aM6XnBxuFHpw3lV2yi5qsyZrNrFCHHbDMn03vgZ6GkgPAex1GF//JQiflMSWREL6KQucRA==",
+  "dgSpecHash": "XM0e5AV0m4BnEUNhLKSq1ce2GRAP9EnRXwLUSTr5xmcBODx1Av9oFc2gNl/BF7CoWD8MtTbpDDNfD1F1skP8Mg==",
   "success": true,
   "projectFilePath": "/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/loader.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/songchoongseok/.nuget/packages/mediatr/12.4.0/mediatr.12.4.0.nupkg.sha512",
+    "/Users/songchoongseok/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
+    "/Users/songchoongseok/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.0/microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "/Users/songchoongseok/.nuget/packages/nettopologysuite/2.5.0/nettopologysuite.2.5.0.nupkg.sha512",
+    "/Users/songchoongseok/.nuget/packages/nredisstack/0.12.0/nredisstack.0.12.0.nupkg.sha512",
+    "/Users/songchoongseok/.nuget/packages/pipelines.sockets.unofficial/2.2.8/pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "/Users/songchoongseok/.nuget/packages/stackexchange.redis/2.6.122/stackexchange.redis.2.6.122.nupkg.sha512",
+    "/Users/songchoongseok/.nuget/packages/system.io.pipelines/5.0.1/system.io.pipelines.5.0.1.nupkg.sha512",
+    "/Users/songchoongseok/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }
