@@ -1,0 +1,14 @@
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/obj/Debug/net8.0/loader.GeneratedMSBuildEditorConfig.editorconfig
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/obj/Debug/net8.0/loader.AssemblyInfoInputs.cache
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/obj/Debug/net8.0/loader.AssemblyInfo.cs
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/obj/Debug/net8.0/loader.csproj.CoreCompileInputs.cache
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/bin/Debug/net8.0/loader
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/bin/Debug/net8.0/loader.deps.json
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/bin/Debug/net8.0/loader.runtimeconfig.json
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/bin/Debug/net8.0/loader.dll
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/bin/Debug/net8.0/loader.pdb
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/obj/Debug/net8.0/loader.dll
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/obj/Debug/net8.0/refint/loader.dll
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/obj/Debug/net8.0/loader.pdb
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/obj/Debug/net8.0/loader.genruntimeconfig.cache
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/services/loader/obj/Debug/net8.0/ref/loader.dll
