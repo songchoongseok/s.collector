@@ -2,4 +2,4 @@ using MediatR;
 
 namespace Applications.RegisterRule;
 
-public record RegisterRuleCommand() : IRequest;
+public sealed record RegisterRuleCommand() : IRequest;
