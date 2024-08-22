@@ -49,3 +49,6 @@
 /Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/obj/Debug/net8.0/ref/Loader.dll
 /Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/bin/Debug/net8.0/MediatR.dll
 /Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/bin/Debug/net8.0/MediatR.Contracts.dll
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/bin/Debug/net8.0/Serilog.dll
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/bin/Debug/net8.0/Serilog.Sinks.Console.dll
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/bin/Debug/net8.0/Serilog.Sinks.File.dll
