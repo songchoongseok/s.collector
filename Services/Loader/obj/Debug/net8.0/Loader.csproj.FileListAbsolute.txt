@@ -47,3 +47,5 @@
 /Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/obj/Debug/net8.0/Loader.pdb
 /Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/obj/Debug/net8.0/Loader.genruntimeconfig.cache
 /Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/obj/Debug/net8.0/ref/Loader.dll
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/bin/Debug/net8.0/MediatR.dll
+/Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/bin/Debug/net8.0/MediatR.Contracts.dll

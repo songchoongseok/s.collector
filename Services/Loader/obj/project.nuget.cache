@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "DxmblHS56Ig=",
+  "dgSpecHash": "D1At3Y9QXgE=",
   "success": true,
   "projectFilePath": "/Users/songchoongseok/Desktop/작업공간/projects/s.collector/Services/Loader/Loader.csproj",
   "expectedPackageFiles": [
+    "/Users/songchoongseok/.nuget/packages/mediatr/12.4.0/mediatr.12.4.0.nupkg.sha512",
+    "/Users/songchoongseok/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/Users/songchoongseok/.nuget/packages/microsoft.extensions.configuration/8.0.0/microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "/Users/songchoongseok/.nuget/packages/microsoft.extensions.configuration.abstractions/8.0.0/microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "/Users/songchoongseok/.nuget/packages/microsoft.extensions.configuration.binder/8.0.0/microsoft.extensions.configuration.binder.8.0.0.nupkg.sha512",
