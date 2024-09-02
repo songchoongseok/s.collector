@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loader", "Services\Loader\Loader.csproj", "{08E8D047-97ED-430A-B057-4B322BE3DA02}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Listener", "Services\Listener\Listener.csproj", "{A8DD6054-4BAB-45BC-98F1-6DD3B5B34E6E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,8 +22,13 @@ Global
 		{08E8D047-97ED-430A-B057-4B322BE3DA02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{08E8D047-97ED-430A-B057-4B322BE3DA02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{08E8D047-97ED-430A-B057-4B322BE3DA02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DD6054-4BAB-45BC-98F1-6DD3B5B34E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DD6054-4BAB-45BC-98F1-6DD3B5B34E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DD6054-4BAB-45BC-98F1-6DD3B5B34E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DD6054-4BAB-45BC-98F1-6DD3B5B34E6E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{08E8D047-97ED-430A-B057-4B322BE3DA02} = {BF1AD560-7535-429D-9384-0AF093CE8478}
+		{A8DD6054-4BAB-45BC-98F1-6DD3B5B34E6E} = {BF1AD560-7535-429D-9384-0AF093CE8478}
 	EndGlobalSection
 EndGlobal
