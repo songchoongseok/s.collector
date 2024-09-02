@@ -8,6 +8,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" />
     <PackageReference Include="Microsoft.Extensions.Hosting" />
+    <PackageReference Include="Quartz" />
+    <PackageReference Include="Serilog" />
+    <PackageReference Include="Serilog.AspNetCore" />
+    <PackageReference Include="Serilog.Exceptions" />
+    <PackageReference Include="Serilog.Sinks.Console" />
+    <PackageReference Include="Serilog.Sinks.File" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Adapters/" />
+    <Folder Include="Applications/" />
+    <Folder Include="Domains/" />
+    <Folder Include="Options/" />
+    <Folder Include="Options/InMemoryOptions/" />
   </ItemGroup>
 </Project>

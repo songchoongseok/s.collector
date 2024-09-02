@@ -1,7 +1,13 @@
-using Listener;
+using Microsoft.AspNetCore.Builder;
 
-var builder = Host.CreateApplicationBuilder(args);
-builder.Services.AddHostedService<Worker>();
+var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+{
+    Args = args,
+    ContentRootPath = Directory.GetCurrentDirectory()
+});
+
+builder.Services.RegisterAdapters(builder.Configuration)
+                .RegisterApplications();
 
 var host = builder.Build();
 host.Run();
