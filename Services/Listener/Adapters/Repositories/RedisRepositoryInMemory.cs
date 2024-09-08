@@ -10,14 +10,14 @@ public class RedisRepositoryInMemory : IRepository
     private Dictionary<long, Rule> _rules = new Dictionary<long, Rule>()
     {
         {1, new Rule(1, ScheduleType.Minute, 5, DateTime.Now)},
-        {2, new Rule(2, ScheduleType.Second, 5, DateTime.Now)},
+        {2, new Rule(2, ScheduleType.Second, 6, DateTime.Now)},
         {3, new Rule(3, ScheduleType.Minute, 5, DateTime.Now)},
         {4, new Rule(4, ScheduleType.Minute, 5, DateTime.Now)},
     };
 
     public async Task CreateJobAsync(long ruleId, CancellationToken cancellationToken)
     {
-        await Task.Delay(5);
+        await Task.Delay(5);å
         _jobs.Add(ruleId);
 
         return;
