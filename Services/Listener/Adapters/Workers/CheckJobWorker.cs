@@ -1,3 +1,4 @@
+using Listener.Applications.CheckJob.Commands;
 using MediatR;
 using Quartz;
 
@@ -13,7 +14,7 @@ public sealed class CheckJobWorker(ILogger<CheckJobWorker> logger, IMediator med
     {
         _logger.LogInformation("Worker running at : {time}", DateTime.Now);
 
-        await Task.Delay(5000);
+        await _mediator.Send(new CheckJobCommand());
     }
 
     public void Dispose()

@@ -1,6 +1,8 @@
 using Listener.Abstractions.Options.InMemoryOptions;
 using Listener.Abstractions.Options.QuartzOptions;
+using Listener.Adapters.Repositories;
 using Listener.Adapters.Workers;
+using Listener.Applications.CheckJob;
 using Microsoft.Extensions.Options;
 using Quartz;
 using Serilog;
@@ -15,18 +17,22 @@ public static class AdapterRegistrations
     {
         services.AddAppSettingsOptions()
                 .AddWorkers(configuration)
-                .AddLog(configuration);
+                .AddLog(configuration)
+                .AddRepositories(configuration);
 
-        // builder.Services
-        //         .AddOptions<InMemoryOptions>()
-        //         .Bind(builder.Configuration.GetSection(ApplicationOptions.Key));
+        return services;
+    }
 
-        // if (inMemoryOptions.Value.IsInMemory)
-        // {
+    private static IServiceCollection AddRepositories(this IServiceCollection services, IConfiguration configuration)
+    {
+        var options = configuration.GetSection(nameof(InMemoryOptions)).Get<InMemoryOptions>()!;
 
-        // }
-
-
+        if(options.IsInMemory)
+        {
+            services.AddSingleton<IRepository, RedisRepositoryInMemory>();
+        }
+        else
+        {}
 
         return services;
     }
