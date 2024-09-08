@@ -22,7 +22,5 @@
     <Folder Include="Adapters/" />
     <Folder Include="Applications/" />
     <Folder Include="Domains/" />
-    <Folder Include="Options/" />
-    <Folder Include="Options/InMemoryOptions/" />
   </ItemGroup>
 </Project>
