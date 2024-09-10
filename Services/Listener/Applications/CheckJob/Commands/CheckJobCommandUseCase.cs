@@ -13,20 +13,26 @@ internal sealed class CheckJobCommandUseCase(ILogger<CheckJobCommandUseCase> log
     public async Task Handle(CheckJobCommand command, CancellationToken cancellationToken)
     {
         var nextWorkingTimeByRuleId = await CheckNextJobAsync(cancellationToken);
-
-        _logger.LogInformation("nextJobCount: {count}", nextWorkingTimeByRuleId.Count);
+        _logger.LogInformation("Selected the rules to execute the jobs. count: {count}", nextWorkingTimeByRuleId.Count);
 
         await CreateJobs(nextWorkingTimeByRuleId, cancellationToken);
-
-        _logger.LogInformation("end");
     }
 
     private async Task CreateJobs(Dictionary<long, DateTime> nextWorkingTimeByRuleId, CancellationToken cancellationToken)
     {
         foreach (var data in nextWorkingTimeByRuleId)
         {
-            await _repository.CreateJobAsync(data.Key, cancellationToken);
-            await _repository.UpdateLastWorkingTimeOfRuleAsync(data.Key, data.Value, cancellationToken);
+            try
+            {
+                await _repository.CreateJobAsync(data.Key, cancellationToken);
+                await _repository.UpdateLastWorkingTimeOfRuleAsync(data.Key, data.Value, cancellationToken);
+
+                _logger.LogInformation("Created the job. ruleId: {ruleId}, lastWorkingTime:{lastWorkingTime}", data.Key, data.Value);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Failed to create the job. ruleId: {ruleId}, ex: {ex}", data.Key, ex.ToString());
+            }
         }
     }
 
@@ -34,8 +40,6 @@ internal sealed class CheckJobCommandUseCase(ILogger<CheckJobCommandUseCase> log
     {
         var nextWorkingTimeByRuleId = new Dictionary<long, DateTime>();
         var rules = await _repository.GetRulesAsync(cancellationToken);
-
-        _logger.LogInformation("ruleCount: {count}", rules.Count);
 
         var now = DateTime.Now;
         foreach (var rule in rules)
