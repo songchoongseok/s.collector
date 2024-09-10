@@ -17,7 +17,7 @@ public class RedisRepositoryInMemory : IRepository
 
     public async Task CreateJobAsync(long ruleId, CancellationToken cancellationToken)
     {
-        await Task.Delay(5);å
+        await Task.Delay(5);
         _jobs.Add(ruleId);
 
         return;
