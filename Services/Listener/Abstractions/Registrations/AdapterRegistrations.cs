@@ -25,7 +25,9 @@ public static class AdapterRegistrations
 
     private static IServiceCollection AddRepositories(this IServiceCollection services, IConfiguration configuration)
     {
-        var options = configuration.GetSection(nameof(InMemoryOptions)).Get<InMemoryOptions>()!;
+        InMemoryOptions options = services.BuildServiceProvider()
+            .GetRequiredService<IOptions<InMemoryOptions>>()
+            .Value;
 
         if(options.IsInMemory)
         {
@@ -50,7 +52,9 @@ public static class AdapterRegistrations
 
     private static IServiceCollection AddWorkers(this IServiceCollection services, IConfiguration configuration)
     {
-        var options = configuration.GetSection(nameof(QuartzOptions)).Get<QuartzOptions>()!;
+        QuartzOptions options = services.BuildServiceProvider()
+            .GetRequiredService<IOptions<QuartzOptions>>()
+            .Value;
 
         services.AddQuartz(q =>
         {
